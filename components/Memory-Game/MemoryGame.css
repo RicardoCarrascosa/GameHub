@@ -1,0 +1,56 @@
+.memoryArea {
+  /* height: 80vh; */
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-3);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: var(--padding-xs);
+  border-radius: var(--radius-s);
+  gap: var(--gap-xs);
+}
+.card {
+  width: calc(100% - 2 * var(--margin-s));
+  aspect-ratio: 1;
+  margin: var(--margin-s);
+  border-radius: var(--radius-xs);
+  background-color: var(--color-1);
+  position: relative;
+  perspective: 100px;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.card:hover {
+  background-color: var(--color-2);
+}
+.card.flip {
+  transform: rotateY(180deg);
+}
+
+.frontCard,
+.backCard {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  border-radius: var(--radius-xs);
+}
+.frontCard {
+  transform: rotateY(180deg);
+  background-color: var(--color-4);
+  border-radius: var(--radius-xs);
+}
+
+.finished {
+  width: 100%;
+  height: calc(2rem+ 2 * var(--padding-xs));
+  margin: var(--margin-xs);
+  padding: var(--padding-xs);
+  border-radius: var(--radius-xs);
+  font-size: 1.25rem;
+  text-align: center;
+  text-wrap: wrap;
+  background-color: var(--color-4);
+  color: var(--color-bgColor);
+}

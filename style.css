@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+:root {
+  /* Fonts */
+
+  --font-primary: 'Space Grotesk', sans-serif;
+  --font-secondary: 'Orbitron', sans-serif;
+
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 400;
+
+  /* Colors */
+  --color-bgColor: #30323d;
+  --color-1: #5c80bc;
+  --color-2: #e8c547;
+  --color-3: #4d5061;
+  --color-4: #709775;
+  --color-alert: #ff6666;
+  --color-fonts: #cdd1c4;
+
+  /* SPACINGS */
+  --margin-xs: 5px;
+  --margin-s: 10px;
+  --margin-m: 20px;
+  --margin-l: 30px;
+  --margin-xl: 50px;
+
+  --padding-xs: 5px;
+  --padding-s: 10px;
+  --padding-m: 20px;
+  --padding-l: 30px;
+  --padding-xl: 50px;
+
+  --gap-xs: 5px;
+  --gap-s: 10px;
+  --gap-m: 20px;
+  --gap-l: 30px;
+  --gap-xl: 50px;
+
+  --radius-xs: 5px;
+  --radius-s: 10px;
+  --radius-m: 20px;
+
+  color: var(--color-fonts);
+  background-color: var(--color-bgColor);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: var(--font-primary);
+}
+
+#app {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mainIcon {
+  border-radius: 10px;
+}
+.gameIcon {
+  height: 80%;
+  background-color: var(--color-1);
+  padding: var(--padding-xs);
+  margin: var(--margin-s);
+  border-radius: 5px;
+}
+.gameIcon:hover {
+  background-color: var(--color-2);
+}
+.gameIcon:active {
+  background-color: var(--color-4);
+}
+header > nav {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* gap: var(--gap-s); */
+}
+
+.gameArea {
+  width: calc(100% - 2 * var(--margin-m));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  max-width: 400px;
+  border: solid;
+  border-radius: 20px;
+  margin: var(--margin-m);
+  padding: var(--padding-m);
+}
+.resetButton {
+  padding: var(--padding-m);
+  height: calc(2rem+ 2 * var(--padding-xs));
+  font-size: 1rem;
+  font-family: var(--font-secondary);
+  background-color: var(--color-1);
+  border-radius: var(--radius-m);
+  border: none;
+}
+
+.resetButton:hover {
+  background-color: var(--color-2);
+}
+.resetButton:active {
+  background-color: var(--color-alert);
+}
+
+.Selected {
+  background-color: var(--color-3);
+}
+
+.homeText {
+  height: 50vh;
+  font-size: 2rem;
+  font-family: var(--font-secondary);
+}
+
+h1 {
+  font-family: var(--font-secondary);
+}
+footer > p {
+  font-family: var(--font-secondary);
+}
