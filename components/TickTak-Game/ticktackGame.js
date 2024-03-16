@@ -1,4 +1,3 @@
-import { doc } from 'prettier'
 import './ticktackGame.css'
 
 let CURRPLAYER = 0
