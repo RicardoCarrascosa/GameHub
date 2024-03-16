@@ -44,7 +44,7 @@
 
 .finished {
   width: 100%;
-  height: calc(2rem+ 2 * var(--padding-xs));
+  height: (2rem + 2 * var(--padding-xs));
   margin: var(--margin-xs);
   padding: var(--padding-xs);
   border-radius: var(--radius-xs);
