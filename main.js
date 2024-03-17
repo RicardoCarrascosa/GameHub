@@ -6,7 +6,7 @@ import { ticktackGame } from './components/TickTak-Game/ticktackGame.js'
 const Layout = `
 <header>
   <nav>
-    <img class= "mainIcon" src="./public/icons8-games-64.png" alt="icons8-games-64"></img>
+    <img class= "mainIcon" src="./icons8-games-64.png" alt="icons8-games-64"></img>
     <img id = 'tickTackToe' class= "gameIcon" src = "./icons8-tres-en-raya-50.png" alt="icons8-tres-en-raya-50"></img>
     <img id = 'memoryGame' class= "gameIcon" src = "./icons8-memory-game-64.png" alt="icons8-memort-game-64"></img>
     <img id = 'rockPaperScissor' class= "gameIcon" src = "./rock-paper-scissors.png" alt="rock-paper-scissors"></img>
