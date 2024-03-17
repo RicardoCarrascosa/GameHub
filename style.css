@@ -107,7 +107,7 @@ header > nav {
 }
 .resetButton {
   padding: var(--padding-m);
-  height: calc(2rem + 2 * var(--padding-m));
+  height: calc(1.25rem + 2 * var(--padding-m));
   font-size: 1rem;
   font-family: var(--font-secondary);
   background-color: var(--color-1);
