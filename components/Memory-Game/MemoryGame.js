@@ -94,7 +94,8 @@ const createBoard = (playArea) => {
       cards.push({ pos: pos2, image: PICTURES[value] })
     }
   }
-  const cardsOrg = cards.sort((a, b) => a.pos > b.pos)
+  // const cardsOrg = cards.sort((a, b) => a.pos > b.pos)
+  const cardsOrg = cards.sort((a, b) => (a.pos > b.pos ? 1 : -1))
 
   // draw the board all up
   cardsOrg.forEach((element) => {
